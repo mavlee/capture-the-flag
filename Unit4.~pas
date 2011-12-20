@@ -1,0 +1,36 @@
+unit Unit4;
+
+interface
+
+uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls, 
+  Buttons;
+
+type
+  TServer = class(TForm)
+    Label1: TLabel;
+    ServerChoice: TEdit;
+    OKBtn: TButton;
+    CancelBtn: TButton;
+    procedure OKBtnClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Server: TServer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TServer.OKBtnClick(Sender: TObject);
+begin
+  ClientSocket1.Active := false;
+  ClientSocket1.Host := ServerChoice.Text;
+  ClientSocket1.Active := true;
+end;
+
+end.
+ 

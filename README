@@ -1,0 +1,17 @@
+This is a capture the flag game, written back in the day.
+
+This was done in Delphi, and I've lost the means to compile this,
+but the two exes will work (in Windows).
+
+This is a two player multiplayer game, with a chat interface.
+The two executables are Capture_The_Flag_Server.exe and
+Capture_The_Flag_Client.exe respectively.
+
+The player running the server executable will have to give the client
+player their IP through some other means.
+
+Each player has limited vision, and several AI ally ninjas, that follow
+the opposing player.  The goal of the game is to grab the opponent's flag
+and returning to your own flag.
+
+There are items scattered around, and a variety of maps.
